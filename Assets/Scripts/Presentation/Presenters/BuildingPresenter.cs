@@ -28,8 +28,6 @@ namespace Presentation.Presenters
 
         public void CreateBuilding(BuildingCreatedDTO message)
         {
-            Debug.Log("I'm here");
-            
             var buildingInfo = _buildingConfigsRepository.GetBuildingInfo(message.BuildingId);
             var createdBuilding = Object.Instantiate(buildingInfo.prefab);
             createdBuilding.transform.position = new Vector3(message.Position.x, 0, message.Position.y);
