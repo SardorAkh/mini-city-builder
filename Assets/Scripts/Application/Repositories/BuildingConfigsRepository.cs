@@ -12,7 +12,7 @@ namespace Application.Repositories
         [Header("Building Configurations")] [SerializeField]
         private BuildingInfo[] buildings;
     
-        private Dictionary<BuildingType, BuildingInfo> _buildingLookup;
+        private Dictionary<int, BuildingInfo> _buildingLookup;
     
         [System.NonSerialized] private bool _initialized = false;
     
@@ -20,14 +20,14 @@ namespace Application.Repositories
         {
             if (_initialized) return;
         
-            _buildingLookup = buildings.ToDictionary(b => b.buildingType);
+            _buildingLookup = buildings.ToDictionary(b => b.id);
             _initialized = true;
         }
     
-        public BuildingInfo GetBuildingInfo(BuildingType type)
+        public BuildingInfo GetBuildingInfo(int id)
         {
             if (!_initialized) Initialize();
-            return _buildingLookup.GetValueOrDefault(type);
+            return _buildingLookup.GetValueOrDefault(id);
         }
     
         public IEnumerable<BuildingInfo> GetAllBuildings()

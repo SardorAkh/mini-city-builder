@@ -7,22 +7,22 @@ namespace Domain.Models.Economy
     [System.Serializable]
     public struct Cost 
     {
-        private readonly Dictionary<CurrencyType, int> _currencies;
+        public Currency[] Currencies;
     
-        public IReadOnlyDictionary<CurrencyType, int> Currencies => _currencies;
-    
-        public Cost(params Currency[] resources)
+        public Cost(params Currency[] currencies)
         {
-            _currencies = resources.ToDictionary(r => r.Type, r => r.Amount);
+            Currencies = currencies ?? new Currency[0];
         }
-        
-        public Cost(CurrencyType type, int amount)
+        public int GetAmount(CurrencyType type)
         {
-            _currencies = new Dictionary<CurrencyType, int> { { type, amount } };
+            foreach (var currency in Currencies)
+            {
+                if (currency.Type == type)
+                    return currency.Amount;
+            }
+            return 0;
         }
-    
-        public int GetAmount(CurrencyType type) => _currencies.GetValueOrDefault(type, 0);
-        public bool IsEmpty => !_currencies.Any();
+        public bool IsEmpty => !Currencies.Any();
         public static Cost Empty => new Cost();
     }
 }

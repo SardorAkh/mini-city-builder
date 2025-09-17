@@ -5,28 +5,27 @@ namespace Domain.Models.Buildings
 {
     public class CityModel
     {
-        private readonly Dictionary<int, BuildingModel> _buildings = new();
+        // private readonly Dictionary<int, BuildingModel> _buildings = new();
         private readonly Dictionary<Vector2Int, BuildingModel> _buildingsByPosition = new();
     
-        public IReadOnlyCollection<BuildingModel> AllBuildings => _buildings.Values;
+        public IReadOnlyCollection<BuildingModel> AllBuildings => _buildingsByPosition.Values;
     
         public void AddBuilding(BuildingModel building)
         {
-            _buildings[building.UniqueId] = building;
+            // _buildings[building.UniqueId] = building;
             _buildingsByPosition[building.Position] = building;
         }
     
-        public void RemoveBuilding(int buildingId)
+        public void RemoveBuilding(Vector2Int position)
         {
-            if (_buildings.TryGetValue(buildingId, out var building))
+            if (_buildingsByPosition.TryGetValue(position, out var building))
             {
-                _buildings.Remove(buildingId);
-                _buildingsByPosition.Remove(building.Position);
+                _buildingsByPosition.Remove(position);
             }
         }
     
-        public BuildingModel GetBuilding(int id) => 
-            _buildings.GetValueOrDefault(id);
+        // public BuildingModel GetBuilding(int id) => 
+        //     _buildings.GetValueOrDefault(id);
     
         public BuildingModel GetBuildingAtPosition(Vector2Int position) => 
             _buildingsByPosition.GetValueOrDefault(position);

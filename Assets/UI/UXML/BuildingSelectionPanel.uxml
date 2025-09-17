@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/BuildingSelectionPanel.uss?fileID=7433441132597879392&amp;guid=cc0a5d9d8c485334784611e7839fa056&amp;type=3#BuildingSelectionPanel" />
+    <ui:Button text="🔨 Build" name="activate-build-button" class="activate-build-button" style="left: 0; right: auto; top: auto; bottom: 0;" />
+    <ui:VisualElement name="building-selection-panel" class="building-panel">
+        <ui:Label text="Select Building" name="panel-title" class="panel-title" />
+        <ui:VisualElement name="building-buttons-container" class="building-buttons-container" />
+        <ui:Button text="Cancel" name="cancel-button" class="cancel-button" />
+    </ui:VisualElement>
+</ui:UXML>

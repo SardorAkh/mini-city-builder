@@ -23,7 +23,7 @@ namespace Domain.Models.Economy
         {
             foreach (var currency in cost.Currencies)
             {
-                if (GetAmount(currency.Key) < currency.Value)
+                if (GetAmount(currency.Type) < currency.Amount)
                     return false;
             }
 
@@ -34,7 +34,7 @@ namespace Domain.Models.Economy
         {
             foreach (var currency in cost.Currencies)
             {
-                _currencies[currency.Key] = GetAmount(currency.Key) - currency.Value;
+                _currencies[currency.Type] = GetAmount(currency.Type) - currency.Amount;
             }
 
             NotifyChanged();
@@ -48,9 +48,9 @@ namespace Domain.Models.Economy
 
         public void Add(Income income)
         {
-            foreach (var currency in income.CurrenciesPerInterval)
+            foreach (var currency in income.currencies)
             {
-                Add(new Currency(currency.Key, currency.Value));
+                Add(currency);
             }
         }
 

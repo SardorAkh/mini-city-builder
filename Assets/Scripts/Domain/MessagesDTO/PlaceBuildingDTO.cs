@@ -6,7 +6,6 @@ namespace Domain.MessagesDTO
 {
     public class PlaceBuildingDTO
     {
-        public BuildingType BuildingType { get; set; }
         public Vector2Int Position { get; set; }
     }
 }

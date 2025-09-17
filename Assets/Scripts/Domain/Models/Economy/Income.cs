@@ -7,25 +7,31 @@ namespace Domain.Models.Economy
     [System.Serializable]
     public struct Income
     {
-        private readonly Dictionary<CurrencyType, int> _currenciesPerInterval;
-        private readonly int _intervalSeconds;
-
-        public IReadOnlyDictionary<CurrencyType, int> CurrenciesPerInterval => _currenciesPerInterval;
-        public int IntervalSeconds => _intervalSeconds;
+        public Currency[] currencies;
+        public int intervalSeconds;
 
         public Income(int intervalSeconds, params Currency[] currencies)
         {
-            _intervalSeconds = intervalSeconds;
-            _currenciesPerInterval = currencies.ToDictionary(r => r.Type, r => r.Amount);
+            this.intervalSeconds = intervalSeconds;
+            this.currencies = currencies ?? new Currency[0];
         }
 
         public Income(CurrencyType type, int amount, int intervalSeconds)
         {
-            _intervalSeconds = intervalSeconds;
-            _currenciesPerInterval = new Dictionary<CurrencyType, int> { { type, amount } };
+            this.intervalSeconds = intervalSeconds;
+            this.currencies = new Currency[] { new Currency(type, amount) };
         }
 
-        public int GetAmountPerInterval(CurrencyType type) => _currenciesPerInterval.GetValueOrDefault(type, 0);
-        public static Income Empty => new();
+        public int GetAmountPerInterval(CurrencyType type)
+        {
+            foreach (var currency in currencies)
+            {
+                if (currency.Type == type)
+                    return currency.Amount;
+            }
+            return 0;
+        }
+
+        public static Income Empty => new Income(0);
     }
 }

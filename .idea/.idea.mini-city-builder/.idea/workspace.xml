@@ -5,57 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e4c0a8-447a-4103-8671-4ccda6b51ac0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Services.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Tests.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/UseCases.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Tests.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/DI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Input.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Persistence.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Tests.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Presenters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Tests.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Views.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Interfaces/IGridService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Interfaces/IGridService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Interfaces/IPhysicsLayerProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Interfaces/IPhysicsLayerProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Providers/PhysicsLayerProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Providers/PhysicsLayerProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/UseCases/CellHighlightUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/UseCases/CellHighlightUseCase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/UseCases/ResolveGridPositionUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Application/UseCases/ResolveGridPositionUseCase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Enums/HighlightType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Enums/HighlightType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/CellToHighlightDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/CellToHighlightDTO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/MouseClickDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/MouseClickDTO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/MousePositionUpdateDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/MousePositionUpdateDTO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Buildings/BuildingSelectionModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Buildings/BuildingSelectionModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Interfaces/IBuildingSelectionPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Interfaces/IBuildingSelectionPresenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Interfaces/IBuildingSelectionView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Interfaces/IBuildingSelectionView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Presenters/BuildingPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Presenters/BuildingPresenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Presenters/BuildingSelectionPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Presenters/BuildingSelectionPresenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Presenters/CellHighlightPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Presenters/CellHighlightPresenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Views/BuildingSelectionView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Views/BuildingSelectionView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Views/CellHighlightView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Presentation/Views/CellHighlightView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mini-city-builder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mini-city-builder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContractsInterfaces.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContractsInterfaces/DomainGameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContractsInterfaces/Infrastructure.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContractsInterfaces/PresenterGameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContractsInterfaces/UseCasesGameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContractsInterfaces/ViewsGameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Gameplay/DomainGameplay.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Gameplay/DomainGameplay.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Gameplay/MessagesDTO.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Gameplay/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Gameplay/Tests.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/Factories/BuildingModelFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Factories/BuildingModelFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/Repositories/BuildingConfigsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Repositories/BuildingConfigsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/Services/BuildingEconomicsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Services/BuildingService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/Services/BuildingEconomicsService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Services/BuildingService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/Services/GridService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/Services/GridService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/UseCases/PlaceBuildingUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/UseCases/PlaceBuildingUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/PlaceBuildingDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/PlaceBuildingDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Buildings/BuildingModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Buildings/BuildingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Buildings/CityModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Buildings/CityModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/Cost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/Cost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/Currency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/Currency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/CurrencyModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/CurrencyModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/Income.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Models/Economy/Income.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/DI/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/DI/GameInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Infrastructure.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Infrastructure.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/Gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/Gameplay/InstallersGameplay.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/Gameplay/InstallersGameplay.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Presentation/Gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Presentation/Gameplay/PresentationGameplay.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Presentation/Gameplay/PresentationGameplay.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Presentation/Gameplay/Presenters.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Presentation/Gameplay/Views.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Repositories.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Repositories/Gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Repositories/Gameplay/RepositoriesGameplay.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Repositories/Gameplay/RepositoriesGameplay.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UseCases.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UseCases/Gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UseCases/Gameplay/UseCasesGameplay.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UseCases/Gameplay/UseCasesGameplay.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DomainGameplay.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DomainGameplay.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstallersGameplay.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/InstallersGameplay.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationGameplay.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationGameplay.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RepositoriesGameplay.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RepositoriesGameplay.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseCasesGameplay.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UseCasesGameplay.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-city-builder.sln" beforeDir="false" afterPath="$PROJECT_DIR$/mini-city-builder.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Input/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Input/InputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +84,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a6479622a9314fcba3eb70d4da8dd46092e00/ee/72843ff0/ReactiveCommand`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ce25f60185214755aecd20f4c928c90e1eae00/7c/1e584e65/ILogger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d303c2bf72cd4cec95665b89c457d265d2b8ef3ed6da17cd4f85587c2f9de7/System.Linq.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Domain/MessagesDTO/BuildingUpgradedDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.messagepipe@64eb0c5ed60e/Runtime/IPublisherSubscriber.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@8c70d0b94b30/Runtime/Unity/EntryPointExceptionHandler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -96,7 +102,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -166,6 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758007403369</updated>
       <workItem from="1758007405377" duration="2116000" />
+      <workItem from="1758102198563" duration="8634000" />
     </task>
     <servers />
   </component>

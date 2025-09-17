@@ -6,14 +6,14 @@ namespace Domain.Models.Buildings
 {
     public class BuildingModel
     {
-        public int UniqueId { get; private set; }
+        public int Id { get; private set; }
         public BuildingType Type { get; private set; }
         public Vector2Int Position { get; set; }
         public ReactiveProperty<int> Level { get; private set; }
     
-        public BuildingModel(int uniqueId, BuildingType type, Vector2Int position)
+        public BuildingModel(int id, BuildingType type, Vector2Int position)
         {
-            UniqueId = uniqueId;
+            Id = id;
             Type = type;
             Position = position;
             Level = new ReactiveProperty<int>(1); 

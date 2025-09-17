@@ -1,4 +1,5 @@
 ﻿using System;
+using Application.Interfaces;
 using Application.Repositories;
 using Domain.Models.Grid;
 using UnityEngine;
@@ -7,7 +8,7 @@ using VContainer.Unity;
 
 namespace Application.Services
 {
-    public class GridService : IInitializable
+    public class GridService : IInitializable, IGridService
     {
         [Inject] private readonly GridConfigRepository _gridConfig;
 
@@ -34,5 +35,12 @@ namespace Application.Services
 
         public bool CanPlaceBuilding(Vector2Int position) =>
             _gridModel.IsValidPosition(position) && !_gridModel.IsCellOccupied(position);
+
+        public bool IsValidPosition(Vector2Int position) => _gridModel.IsValidPosition(position);
+        
+        public void OccupyCell(Vector2Int position)
+        {
+            _gridModel.OccupyCell(position);
+        }
     }
 }

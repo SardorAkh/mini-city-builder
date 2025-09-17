@@ -1,11 +1,13 @@
 ﻿using Domain.Enums;
+using UnityEngine;
 
 namespace Domain.Models.Economy
 {
+    [System.Serializable]
     public struct Currency
     {
-        private readonly CurrencyType _type;
-        private readonly int _amount;
+        [SerializeField] private CurrencyType _type;
+        [SerializeField] private int _amount;
 
         public CurrencyType Type => _type;
         public int Amount => _amount;
